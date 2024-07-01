@@ -1,0 +1,61 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+ 
+ margin: 0; /* para ter uma margem 0 */
+ padding: 0; /* para ter um espaçamento 0 */
+ font-family: "Chakra Petch", Helvetica; /* fonte importada + fonte substituta */
+
+}
+
+body {
+
+ height: 100vh; /* altura para cobrir a tela inteira */
+ background: linear-gradient(120deg, rgb(98, 1, 255), rgb(255, 208, 0)); /* para ter um fundo com gradiente de cores */
+ display: flex; /* permite que os elementos responsivos dentro de um contêiner sejam organizados automaticamente */
+ align-items: center; /* para alinhar itens no centro */
+ justify-content: center; /* centralizar itens no centro */
+
+}
+
+.relogio {
+
+ display: flex; /* para ficarem um ao lado do outro e organizados */
+ align-items: center; /* deixar itens centralizados */
+ justify-content: space-around; /* centralizar conteudo perante o espaço em volta */
+ height: 200px; /* altura */
+ width: 550px; /* largura */
+ background: transparent; /* deixar fundo transparente */
+ border-radius: 3px; /* define bordas arredondadas */
+ box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.4); /* sompra da caixa */
+
+}
+
+.relogio div {
+
+ height: 170px; /* altura */
+ width: 150px; /* largura */
+ display: flex; /* para ficarem um ao lado do outro e organizados*/
+ flex-direction: column; /* direção da caixa flex */
+ align-items: center; /* alinhamento de itens */
+ justify-content: center; /* centralizando conteudo */
+ color: white; /* cor da fonte */
+ background: rgba(5, 5, 5, 0.9); /* cor de fundo */
+ box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.0.7); /* sombra da caixa */
+ border-radius: 7px; /* deixar cantos arredondados */
+ letter-spacing: 3px; /* espaçamento das letras */
+}
+
+.relogio span {
+
+  font-weight: bolder; /* para deixar em negrito */
+  font-size: 60px; /* indica o tamanho da fonte */
+
+}
+
+.relogio span.tempo {
+
+ font-size: 20px;
+
+}
